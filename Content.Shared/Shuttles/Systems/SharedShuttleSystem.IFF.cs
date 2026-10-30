@@ -120,8 +120,6 @@ public abstract partial class SharedShuttleSystem
         foreach (var flag in Enum.GetValues<ServiceFlags>())
         {
             if (flag == ServiceFlags.None ||
-                flag == ServiceFlags.InterdictionsEnabled ||
-                flag == ServiceFlags.InterdictionsDisabled ||
                 !flags.HasFlag(flag))
                 continue;
 
